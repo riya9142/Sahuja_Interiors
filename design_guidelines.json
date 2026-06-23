@@ -1,0 +1,145 @@
+{
+  "project_name": "Sahuja Interiors",
+  "theme": "light",
+  "archetype": "5_jewel_luxury_adapted",
+  "description": "A modern, premium, fully responsive interior design portfolio website. The UI is clean, luxurious, and minimal. The color palette focuses on neutral tones (white, beige, black) with subtle gold accents. The design embraces an editorial, 'old money' aesthetic with sharp edges, asymmetrical grids, and high-end photography.",
+  "colors": {
+    "background": "#FFFFFF",
+    "surface": "#FAFAFA",
+    "foreground": "#0A0A0A",
+    "primary": "#0A0A0A",
+    "primary_foreground": "#FFFFFF",
+    "accent": "#D4AF37",
+    "accent_muted": "#F2E8D5",
+    "muted": "#8E8E8E",
+    "muted_foreground": "#666666",
+    "border": "#EAEAEA"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Cormorant Garamond', serif",
+      "body": "'Outfit', sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-light tracking-tighter leading-none",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-light tracking-tight",
+      "body": "text-base md:text-lg font-light leading-relaxed text-[#666666]",
+      "overline": "text-xs font-semibold tracking-[0.2em] uppercase text-[#D4AF37]",
+      "wordmark": "font-serif text-2xl tracking-widest uppercase font-light text-[#0A0A0A]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 lg:px-12",
+    "section_y": "py-24 lg:py-32",
+    "border_radius": "rounded-none",
+    "grid_portfolio": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "grid_services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+  },
+  "motion_and_interactions": {
+    "hover_image_zoom": "overflow-hidden group",
+    "hover_image_inner": "transition-transform duration-700 ease-out group-hover:scale-105",
+    "fade_up": {
+      "initial": { "opacity": 0, "y": 30 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.8, "ease": [0.16, 1, 0.3, 1] }
+    },
+    "smooth_scroll": "Implement smooth scrolling on html/body or use a lightweight smooth scroll utility."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/34277650/pexels-photo-34277650.jpeg",
+      "alt": "Spacious modern luxury living room interior",
+      "category": "hero"
+    },
+    "about_image": {
+      "url": "https://images.pexels.com/photos/37178230/pexels-photo-37178230.jpeg",
+      "alt": "Portrait of female interior designer in studio",
+      "category": "about"
+    },
+    "portfolio_categories": [
+      {
+        "category": "Living Room",
+        "url": "https://images.pexels.com/photos/34538288/pexels-photo-34538288.jpeg",
+        "alt": "Elegant modern living room with minimalist furniture"
+      },
+      {
+        "category": "Bedroom",
+        "url": "https://images.pexels.com/photos/6782578/pexels-photo-6782578.jpeg",
+        "alt": "Interior of modern light luxury bedroom"
+      },
+      {
+        "category": "Bathroom",
+        "url": "https://images.pexels.com/photos/33599113/pexels-photo-33599113.jpeg",
+        "alt": "Elegant modern bathroom with marble design"
+      },
+      {
+        "category": "Kitchen",
+        "url": "https://images.pexels.com/photos/35189708/pexels-photo-35189708.jpeg",
+        "alt": "Elegant and modern kitchen featuring sleek cabinetry"
+      },
+      {
+        "category": "Kids Room",
+        "url": "https://images.pexels.com/photos/11664582/pexels-photo-11664582.jpeg",
+        "alt": "A bright, stylish kids room"
+      },
+      {
+        "category": "Office",
+        "url": "https://images.pexels.com/photos/35058546/pexels-photo-35058546.jpeg",
+        "alt": "Stylish executive office featuring wooden decor"
+      },
+      {
+        "category": "Restaurant",
+        "url": "https://images.pexels.com/photos/15337739/pexels-photo-15337739.jpeg",
+        "alt": "Modern indoor restaurant featuring elegant decor"
+      }
+    ]
+  },
+  "component_blueprints": {
+    "navbar": {
+      "layout": "Fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-white/80 border-b border-[#EAEAEA]/50",
+      "elements": "Logo (Wordmark) left, Desktop links center, Hamburger mobile right. Use Lucide Menu icon.",
+      "interactions": "Links hover change text color to #D4AF37 (Gold)."
+    },
+    "hero": {
+      "layout": "h-screen w-full relative flex items-center justify-center text-center",
+      "overlay": "absolute inset-0 bg-black/40 (max 50% opacity to let image shine)",
+      "content": "Centered text. Overline 'Sahuja Interiors', H1 'Transforming Spaces into Experiences'. CTA buttons: 'View Portfolio' (Solid White bg, Black text) & 'Contact Us' (Transparent bg, White border).",
+      "text_color": "text-white"
+    },
+    "about": {
+      "layout": "Grid 1 md:2 columns. Image left, text right. Use padding right/left for breathing room.",
+      "content": "Focus on the 'Why'. Large H2. A signature or typographic quote adds an editorial touch."
+    },
+    "services_grid": {
+      "layout": "3 columns grid on desktop.",
+      "card_style": "bg-[#FAFAFA] p-8 md:p-12 hover:-translate-y-2 transition-transform duration-300 border border-transparent hover:border-[#EAEAEA]",
+      "icons": "Use minimalist Lucide React icons (e.g., Home, Briefcase, Utensils, Bed, Baby, Coffee). Color: #D4AF37"
+    },
+    "portfolio_gallery": {
+      "filters": "Flex wrap, center aligned. Buttons with text-sm uppercase tracking-widest. Active state gets a 1px border-b border-[#D4AF37].",
+      "grid": "CSS Grid or Masonry. Mixed aspect ratios (some tall span-2 rows, some wide span-2 cols) to create an asymmetrical 'Tetris' grid. Do not use perfect equal squares.",
+      "card_interaction": "Group wrapper with overflow-hidden. Image scale-105 on hover. Absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity. Text (Category + Title) at bottom-left translates up on hover."
+    },
+    "testimonials": {
+      "layout": "Background #FAFAFA. Centered heading.",
+      "card": "bg-white p-8 border border-[#EAEAEA]. Stars using Lucide Star (fill #D4AF37). Minimalist typography for the review. No drop shadows, rely on 1px borders."
+    },
+    "process": {
+      "layout": "Grid 1 md:4 columns.",
+      "step_style": "Large number (e.g., '01') in extremely large font (text-6xl) using #F2E8D5 (Muted Gold/Beige). Text placed over or below it. High contrast sizes."
+    },
+    "contact": {
+      "layout": "Grid 1 md:2 columns. Left: Clean form. Right: Google Maps Embed + Info.",
+      "form_style": "Use inputs with border-b only (border-b border-[#EAEAEA] focus:border-[#0A0A0A]), no rounded boxes, for an elegant editorial feel.",
+      "map": "Grayscale filter on Google Maps if possible via CSS (filter: grayscale(100%)) to fit the aesthetic."
+    },
+    "footer": {
+      "layout": "bg-[#0A0A0A] text-white py-16",
+      "content": "Brand wordmark, quick links, social links (Lucide icons). Minimalist layout."
+    }
+  },
+  "testing_rules": {
+    "attributes": "All interactive elements MUST include data-testid attributes (e.g., data-testid='navbar-portfolio-link', data-testid='hero-cta-button', data-testid='contact-submit-button')."
+  }
+}
