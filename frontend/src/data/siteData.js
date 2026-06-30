@@ -228,7 +228,7 @@ export const CATEGORIES = [
     name: "Dining",
     tagline: "Hosting-ready dining rooms with sculptural presence.",
     cover:
-      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1400&q=80",
+      "https://www.greenply.com:5001/originalfile1768993285849-287.jpg",
     gallery: [
       "https://www.greenply.com:5001/originalfile1769087921462-7166.jpg",
       "https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2024-1704560007-SGQ6F/dining-1705599441-VQG3B/dr-11-1707297630-kTCCH.jpg",
